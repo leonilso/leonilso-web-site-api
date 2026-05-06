@@ -41,7 +41,7 @@ jobs:
 
             docker run -d \
               -p 3001:3001 \
-              -v /var/www/leonilso-api/data:/app \
+              -v /var/www/leonilso-api/data:/app/data\
               --restart always \
               --name leonilso-backend \
               leonilso-backend
