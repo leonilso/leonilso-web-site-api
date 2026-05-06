@@ -36,7 +36,7 @@ function sanitize(input) {
   return xss(input.trim());
 }
 
-app.post('/api/contato', (req, res) => {
+app.post('/contato', (req, res) => {
   let { nome, email, mensagem } = req.body;
 
   if (!nome || !email || !mensagem) {
